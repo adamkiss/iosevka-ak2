@@ -28,6 +28,7 @@ jobs:
       run: |
         cd Iosevka
         npm run build -- contents::iosevka-ak2
+        npm run build -- contents::iosevka-ak2-sans
     - name: Add fonts as artifact
       uses: actions/upload-artifact@v2
       with:
