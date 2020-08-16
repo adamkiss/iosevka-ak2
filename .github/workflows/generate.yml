@@ -3,7 +3,7 @@ name: Generate custom Iosevka version
 on: [push, repository_dispatch]
 
 jobs:
-  run:
+  generate:
     timeout-minutes: 20
     runs-on: macos-latest
     steps:
@@ -19,13 +19,14 @@ jobs:
     - name: Clone latest Iosevka
       run: |
         git clone https://github.com/be5invis/Iosevka.git --depth 1
+    - name: Copy settings and Install dependencies
+      run: |
+        cp private-build-plans.toml Iosevka/
         cd Iosevka
         npm install
-    - name: Copy settings
-      run: |
-        cp ../private-build-plans.toml .
     - name: Run build
       run: |
+        cd Iosevka
         npm run build -- contents::iosevka-ak2
     - name: Add fonts as artifact
       uses: actions/upload-artifact@v2
