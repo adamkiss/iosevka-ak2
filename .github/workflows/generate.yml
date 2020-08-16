@@ -18,7 +18,7 @@ jobs:
         pip3 install afdko
     - name: Clone latest Iosevka
       run: |
-        git clone git@github.com:be5invis/Iosevka.git --depth 1
+        git clone https://github.com/be5invis/Iosevka.git --depth 1
         cd Iosevka
         npm install
     - name: Copy settings
