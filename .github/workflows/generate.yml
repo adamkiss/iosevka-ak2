@@ -1,0 +1,35 @@
+name: Generate custom Iosevka version
+
+on: [push, repository_dispatch]
+
+jobs:
+  run:
+    timeout-minutes: 20
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+    - name: Install Dependencies
+      run: |
+        brew install ttfautohint
+        brew tap caryll/tap
+        brew install otfcc-mac64
+        pip3 install afdko
+    - name: Clone latest Iosevka
+      run: |
+        git clone git@github.com:be5invis/Iosevka.git --depth 1
+        cd Iosevka
+        npm install
+    - name: Copy settings
+      run: |
+        cp ../private-build-plans.toml .
+    - name: Run build
+      run: |
+        npm run build -- contents::iosevka-ak2
+    - name: Add fonts as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: Fonts
+        path: $GITHUB_WORKSPACE/Iosevka/dist
+

@@ -1,0 +1,21 @@
+[buildPlans.iosevka-ak2]
+family = "Iosevka AK2"
+design = ["VXBA", "cv86", "VXDC", "cv90", "cv76", "VXBF", "cv92", "VXDA", "VXCJ", "cv51", "cv46", "VXAV", "VXAE", "VXAY", "cv96", "cv61", "cv30", "VXAO", "cv33", "cv55", "cv67"]
+upright = ["cv06", "xv58", "cv11", "cv84", "cv26", "VXDA", "cv70", "VXAI", "VXBJ"]
+italic = ["cv04", "VXDE", "cv24", "cv53", "VXCE", "VXCG", "VXBU", "cv08", "VXCC", "VXBR", "VXAL", "VXBI"]
+# oblique = ["oblique-styles"]            # Uncomment this line to set styles for oblique only
+# hintParams = ["-a", "sss"]              # Optional custom parameters for ttfautohint
+
+[buildPlans.iosevka-ak2.slopes]
+upright = "normal"
+italic = "italic"
+
+[buildPlans.iosevka-ak2-sans]               # <iosevka-custom> is your plan name
+family = "Iosevka AK2 Sans"                 # Font menu family name
+design = ["type", "VXBA", "cv86", "VXDC", "cv90", "cv76", "VXBF", "cv92", "VXDA", "VXCJ", "cv51", "cv46", "VXAV", "VXAE", "VXAY", "cv96", "cv61", "cv30", "VXAO", "cv33", "cv55", "cv67"]
+upright = ["cv06", "xv58", "cv11", "cv84", "cv26", "VXDA", "cv70", "VXAI", "VXBJ"]
+italic = ["cv04", "VXDE", "cv24", "cv53", "VXCE", "VXCG", "VXBU", "cv08", "VXCC", "VXBR", "VXAL", "VXBI"]
+
+[buildPlans.iosevka-ak2-sans.slopes]
+upright = "normal"
+italic = "italic"
