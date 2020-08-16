@@ -37,6 +37,6 @@ jobs:
     - name: Add fonts as artifact
       uses: actions/upload-artifact@v2
       with:
-        name: Fonts
-        path: $GITHUB_WORKSPACE/Iosevka/dist
+        name: Iosevka AK2
+        path: ${{ github.workspace }}/Iosevka/dist/iosevka-ak2
 
