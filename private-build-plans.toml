@@ -1,21 +1,152 @@
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
-design = ["VXBA", "cv86", "VXDC", "cv90", "cv76", "VXBF", "cv92", "VXDA", "VXCJ", "cv51", "cv46", "VXAV", "VXAE", "VXAY", "cv96", "cv61", "cv30", "VXAO", "cv33", "cv55", "cv67"]
-upright = ["cv06", "xv58", "cv11", "cv84", "cv26", "VXDA", "cv70", "VXAI", "VXBJ"]
-italic = ["cv04", "VXDE", "cv24", "cv53", "VXCE", "VXCG", "VXBU", "cv08", "VXCC", "VXBR", "VXAL", "VXBI"]
-# oblique = ["oblique-styles"]            # Uncomment this line to set styles for oblique only
-# hintParams = ["-a", "sss"]              # Optional custom parameters for ttfautohint
+design = [
+    "cv01", # a (default)
+    "VXBM", # b rounded bottom
+    "VXBP", # d rounded bottom
+    "cv84", # f serifed
+    "cv11", # g default
+    "VXCB", # h default
+    "cv06", # i asymmtetric serif
+    "cv58", # j rounded
+    "cv68", # k default
+    "cv10", # l asymmetric serif
+    # "VXDA", # l symmetric serif
+    "cv26", # m with shorter middle leg
+    "VXCF", # n default
+    "VXCR", # p rounded top,
+    "VXCS", # 1 rounded top
+    "cv86", # r serif
+    "VXDC", # t sharp bottom
+    "cv79", # y curly
+    "VXBD", # z default
+    "cv73", # A default,
+    "VXAQ", # B rounded
+    "VXBG", # D default
+    "cv92", # G rounded bottom
+    "VXDA", # J serif asymmetric?
+    "VXCI", # M default
+    "VXCA", # Q rounded bottom
+    "cv82", # R default
+    "cv81", # Y curly
+    "cv13", # 0 slash
+    "cv51", # 1 serif
+    "cv46", # 3 sharp
+    "VXAV", # 4 like calculator
+    "VXAE", # 6 rounded bottom
+    "VXAX", # 7 with cross over
+    "cv96", # 9 rounded
+    "cv17", # ~ middle
+    "cv61", # * middle with 6 legs
+    "cv30", # ^ middle
+    "VXAO", # ( ROUNDED
+    "cv37", # { middle
+    "VXBJ", # # slanted with space
+    "VXAI", # & rounded
+    "cv32", # @ nice
+    "cv54", # $ dollar small,
+    "cv63", # % default?
+    "cv67", # <= ligature"
+]
+# overload…
+italic = [
+    "VXBU", # a curly
+    "cv53", # f curly
+    "cv24", # g curly
+    "VXCC", # h curly serif
+    "cv04", # i curly asymmetric
+    "VXDE", # j curly asymmetric
+    "VXCT", # q curly rounded top
+    "cv40", # t curly bottom
+    "cv72", # v curly bottom
+    "cv78", # x curly bottom
+    "VXBF", # y "curly" bottom
+    "cv74", # A curly
+    "VXBI", # J simplest
+    "cv83", # R curly
+    "cv65", # 7 simpler
+    "VXBI", # # straight with space
+    "VXAL", # & weird
+]
 
 [buildPlans.iosevka-ak2.slopes]
 upright = "normal"
 italic = "italic"
+# skip oblique
 
-[buildPlans.iosevka-ak2-sans]               # <iosevka-custom> is your plan name
-family = "Iosevka AK2 Sans"                 # Font menu family name
-design = ["type", "VXBA", "cv86", "VXDC", "cv90", "cv76", "VXBF", "cv92", "VXDA", "VXCJ", "cv51", "cv46", "VXAV", "VXAE", "VXAY", "cv96", "cv61", "cv30", "VXAO", "cv33", "cv55", "cv67"]
-upright = ["cv06", "xv58", "cv11", "cv84", "cv26", "VXDA", "cv70", "VXAI", "VXBJ"]
-italic = ["cv04", "VXDE", "cv24", "cv53", "VXCE", "VXCG", "VXBU", "cv08", "VXCC", "VXBR", "VXAL", "VXBI"]
+[buildPlans.iosevka-ak2-sans]
+family = "Iosevka AK2 Sans"
+design = [
+    "type", # "Sans"?
+    "cv01", # a (default)
+    "VXBM", # b rounded bottom
+    "VXBP", # d rounded bottom
+    "cv84", # f serifed
+    "cv11", # g default
+    "VXCB", # h default
+    "cv06", # i asymmtetric serif
+    "cv58", # j rounded
+    "cv68", # k default
+    "cv10", # l asymmetric serif
+    # "VXDA", # l symmetric serif
+    "cv26", # m with shorter middle leg
+    "VXCF", # n default
+    "VXCR", # p rounded top,
+    "VXCS", # 1 rounded top
+    "cv86", # r serif
+    "VXDC", # t sharp bottom
+    "cv79", # y curly
+    "VXBD", # z default
+    "cv73", # A default,
+    "VXAQ", # B rounded
+    "VXBG", # D default
+    "cv92", # G rounded bottom
+    "VXDA", # J serif asymmetric?
+    "VXCI", # M default
+    "VXCA", # Q rounded bottom
+    "cv82", # R default
+    "cv81", # Y curly
+    "cv13", # 0 slash
+    "cv51", # 1 serif
+    "cv46", # 3 sharp
+    "VXAV", # 4 like calculator
+    "VXAE", # 6 rounded bottom
+    "VXAX", # 7 with cross over
+    "cv96", # 9 rounded
+    "cv17", # ~ middle
+    "cv61", # * middle with 6 legs
+    "cv30", # ^ middle
+    "VXAO", # ( ROUNDED
+    "cv37", # { middle
+    "VXBJ", # # slanted with space
+    "VXAI", # & rounded
+    "cv32", # @ nice
+    "cv54", # $ dollar small,
+    "cv63", # % default?
+    "cv67", # <= ligature"
+]
+# overload…
+italic = [
+    "VXBU", # a curly
+    "cv53", # f curly
+    "cv24", # g curly
+    "VXCC", # h curly serif
+    "cv04", # i curly asymmetric
+    "VXDE", # j curly asymmetric
+    "VXCT", # q curly rounded top
+    "cv40", # t curly bottom
+    "cv72", # v curly bottom
+    "cv78", # x curly bottom
+    "VXBF", # y "curly" bottom
+    "cv74", # A curly
+    "VXBI", # J simplest
+    "cv83", # R curly
+    "cv65", # 7 simpler
+    "VXBI", # # straight with space
+    "VXAL", # & weird
+]
 
 [buildPlans.iosevka-ak2-sans.slopes]
 upright = "normal"
 italic = "italic"
+# skip oblique
