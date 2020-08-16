@@ -10,8 +10,8 @@ design = [
     "cv06", # i asymmtetric serif
     "cv58", # j rounded
     "cv68", # k default
-    "cv10", # l asymmetric serif
-    # "VXDA", # l symmetric serif
+    "cv10", # l z shaped
+    # "VXDA", # l asymmetric serif
     "cv26", # m with shorter middle leg
     "VXCF", # n default
     "VXCR", # p rounded top,
@@ -88,8 +88,8 @@ design = [
     "cv06", # i asymmtetric serif
     "cv58", # j rounded
     "cv68", # k default
-    "cv10", # l asymmetric serif
-    # "VXDA", # l symmetric serif
+    "cv10", # l z shaped
+    # "VXDA", # l asymmetric serif
     "cv26", # m with shorter middle leg
     "VXCF", # n default
     "VXCR", # p rounded top,
