@@ -56,6 +56,7 @@ italic = [
     "VXCC", # h curly serif
     "cv04", # i curly asymmetric
     "VXDE", # j curly asymmetric
+    "cv08", # l curly asymmetric serif
     "VXCT", # q curly rounded top
     "cv40", # t curly bottom
     "cv72", # v curly bottom
@@ -133,6 +134,7 @@ italic = [
     "VXCC", # h curly serif
     "cv04", # i curly asymmetric
     "VXDE", # j curly asymmetric
+    "cv08", # l curly asymmetric serif
     "VXCT", # q curly rounded top
     "cv40", # t curly bottom
     "cv72", # v curly bottom
