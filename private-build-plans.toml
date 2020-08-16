@@ -18,7 +18,7 @@ design = [
     "VXCS", # 1 rounded top
     "cv86", # r serif
     "VXDC", # t sharp bottom
-    "cv79", # y curly
+    "VXBF", # y with a tail
     "VXBD", # z default
     "cv73", # A default,
     "VXAQ", # B rounded
@@ -28,7 +28,7 @@ design = [
     "VXCI", # M default
     "VXCA", # Q rounded bottom
     "cv82", # R default
-    "cv81", # Y curly
+    "cv80", # Y straight
     "cv13", # 0 slash
     "cv51", # 1 serif
     "cv46", # 3 sharp
@@ -61,7 +61,7 @@ italic = [
     "cv40", # t curly bottom
     "cv72", # v curly bottom
     "cv78", # x curly bottom
-    "VXBF", # y "curly" bottom
+    "cv79", # y curly
     "cv74", # A curly
     "VXBI", # J simplest
     "cv83", # R curly
@@ -101,7 +101,7 @@ design = [
     "VXCS", # 1 rounded top
     "cv86", # r serif
     "VXDC", # t sharp bottom
-    "cv79", # y curly
+    "VXBF", # y with a tail
     "VXBD", # z default
     "cv73", # A default,
     "VXAQ", # B rounded
@@ -111,7 +111,7 @@ design = [
     "VXCI", # M default
     "VXCA", # Q rounded bottom
     "cv82", # R default
-    "cv81", # Y curly
+    "cv80", # Y straight
     "cv13", # 0 slash
     "cv51", # 1 serif
     "cv46", # 3 sharp
@@ -144,7 +144,7 @@ italic = [
     "cv40", # t curly bottom
     "cv72", # v curly bottom
     "cv78", # x curly bottom
-    "VXBF", # y "curly" bottom
+    "cv79", # y curly
     "cv74", # A curly
     "VXBI", # J simplest
     "cv83", # R curly
