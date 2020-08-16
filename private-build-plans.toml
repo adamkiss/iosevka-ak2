@@ -70,9 +70,14 @@ italic = [
     "VXAL", # & weird
 ]
 
+[buildPlans.iosevka-ak2.weights.regular]
+shape = 400  # Weight for glyph shapes.
+menu  = 400  # Weight for the font's names.
+css   = 400  # Weight for webfont CSS.
+
 [buildPlans.iosevka-ak2.slopes]
 upright = "normal"
-italic = "italic"
+# italic = "italic"
 # skip oblique
 
 [buildPlans.iosevka-ak2-sans]

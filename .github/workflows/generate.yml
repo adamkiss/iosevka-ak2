@@ -27,8 +27,13 @@ jobs:
     - name: Run build
       run: |
         cd Iosevka
-        npm run build -- contents::iosevka-ak2
-        npm run build -- contents::iosevka-ak2-sans
+        npm run build -- ttf::iosevka-ak2
+      # npm run build -- contents::iosevka-ak2-sans
+    - name: Figure out where shit is
+      run: |
+        ls
+        ls *
+        ls */*
     - name: Add fonts as artifact
       uses: actions/upload-artifact@v2
       with:
