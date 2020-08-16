@@ -24,7 +24,7 @@ design = [
     "VXAQ", # B rounded
     "VXBG", # D default
     "cv92", # G rounded bottom
-    "VXDA", # J serif asymmetric?
+    "v-capital-j-serifed-both-sides", # J serif asymmetric?
     "VXCI", # M default
     "VXCA", # Q rounded bottom
     "cv82", # R default
@@ -102,7 +102,7 @@ design = [
     "VXAQ", # B rounded
     "VXBG", # D default
     "cv92", # G rounded bottom
-    "VXDA", # J serif asymmetric?
+    "v-capital-j-serifed-both-sides", # J serif asymmetric?
     "VXCI", # M default
     "VXCA", # Q rounded bottom
     "cv82", # R default
