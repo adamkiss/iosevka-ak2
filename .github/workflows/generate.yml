@@ -40,7 +40,7 @@ jobs:
       # npm run build -- contents::iosevka-ak2-sans
     - name: ZIP dist files
       run: |
-        zip -r iosevka-ak-${{ steps.version.output.version}} ${{ github.workspace }}/Iosevka/dist/iosevka-ak2
+        zip -r iosevka-ak-${{ steps.version.outputs.version}} ${{ github.workspace }}/Iosevka/dist/iosevka-ak2
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
