@@ -26,10 +26,10 @@ jobs:
         AK_VERSION=$(head -n 1 private-build-plans.toml | cut -f 3 -d ' ')
         cd Iosevka
         IO_VERSION=$(cat package.json | jq -r '(.version)')
-        IO_SHA=$(git rev-parse HEAD --short)
+        IO_SHA=$(git rev-parse --short HEAD)
         echo "::set-output name=ak::$AK_VERSION"
         echo "::set-output name=iosevka::$IO_VERSION"
-        echo "::set-output name=sha::$(git rev-parse HEAD)"
+        echo "::set-output name=sha::$IO_SHA"
         echo "::set-output name=full::$AK_VERSION.$IO_VERSION"
     - name: Copy settings and Install dependencies
       run: |
@@ -64,7 +64,7 @@ jobs:
           Iosevka AK2 ${{ steps.version.outputs.full }} and Iosevka AK2 Sans ${{ steps.version.outputs.full }}:
           - build plan version: **${{ steps.version.outputs.ak }}**
           - iosevka version: **${{ steps.version.outputs.iosevka }}**
-          - iosevka checkout sha: **${{ steps.version.outputs.sha }}**
+          - iosevka version hash: **${{ steps.version.outputs.sha }}**
           ---
           ${{ steps.changes.outputs.list }}
         draft: false
