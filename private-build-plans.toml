@@ -17,9 +17,10 @@ design = [
     "cv26", # m with shorter middle leg
     "VXCF", # n default
     "VXCR", # p rounded top,
-    "VXCS", # 1 rounded top
+    "VXCS", # q rounded top
     "cv86", # r serif
     "VXDC", # t sharp bottom
+    "cv90", # u rounded bottom
     "VXBF", # y with a tail
     "VXBD", # z default
     "cv73", # A default,
@@ -61,6 +62,7 @@ italic = [
     "cv08", # l curly asymmetric serif
     "VXCT", # q curly rounded top
     "cv40", # t curly bottom
+    "VXBT", # u curly
     "cv72", # v curly bottom
     "cv78", # x curly bottom
     "cv79", # y curly
@@ -100,9 +102,10 @@ design = [
     "cv26", # m with shorter middle leg
     "VXCF", # n default
     "VXCR", # p rounded top,
-    "VXCS", # 1 rounded top
+    "VXCS", # q rounded top
     "cv86", # r serif
     "VXDC", # t sharp bottom
+    "cv90", # u rounded bottom
     "VXBF", # y with a tail
     "VXBD", # z default
     "cv73", # A default,
@@ -144,6 +147,7 @@ italic = [
     "cv08", # l curly asymmetric serif
     "VXCT", # q curly rounded top
     "cv40", # t curly bottom
+    "VXBT", # u curly
     "cv72", # v curly bottom
     "cv78", # x curly bottom
     "cv79", # y curly
