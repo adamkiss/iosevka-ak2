@@ -1,4 +1,4 @@
-# ⌨ Iosevka AK2 and Iosevka AK2 Sans
+# ⌨ Iosevka AK2 and Iosevka AK2 Prose
 
 My own cherry-picked version of the beautiful [Iosevka](https://github.com/be5invis/Iosevka/) font. Thanks Belleve Invis!
 

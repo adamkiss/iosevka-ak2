@@ -79,8 +79,8 @@ upright = "normal"
 italic = "italic"
 # skip oblique
 
-[buildPlans.iosevka-ak2-sans]
-family = "Iosevka AK2 Sans"
+[buildPlans.iosevka-ak2-prose]
+family = "Iosevka AK2 Prose"
 design = [
     "type", # "Sans"?
     "cv01", # a (default)
@@ -154,7 +154,7 @@ italic = [
     "VXAL", # & weird
 ]
 
-[buildPlans.iosevka-ak2-sans.slopes]
+[buildPlans.iosevka-ak2-prose.slopes]
 upright = "normal"
 italic = "italic"
 # skip oblique

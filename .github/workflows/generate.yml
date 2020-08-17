@@ -40,13 +40,13 @@ jobs:
       run: |
         cd Iosevka
         npm run build -- contents::iosevka-ak2
-        npm run build -- contents::iosevka-ak2-sans
+        npm run build -- contents::iosevka-ak2-prose
     - name: ZIP dist files
       run: |
         mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2 ./iosevka-ak2-${{ steps.version.outputs.full }}
-        mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2-sans ./iosevka-ak2-sans-${{ steps.version.outputs.full }}
+        mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2-prose ./iosevka-ak2-prose-${{ steps.version.outputs.full }}
         zip -r iosevka-ak2-${{ steps.version.outputs.full }}.zip iosevka-ak2-${{ steps.version.outputs.full }}
-        zip -r iosevka-ak2-sans-${{ steps.version.outputs.full }}.zip iosevka-ak2-sans-${{ steps.version.outputs.full }}
+        zip -r iosevka-ak2-prose-${{ steps.version.outputs.full }}.zip iosevka-ak2-prose-${{ steps.version.outputs.full }}
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -79,6 +79,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./iosevka-ak2-sans-${{ steps.version.outputs.full }}.zip
-        asset_name: iosevka-ak2-sans-${{ steps.version.outputs.full }}.zip
+        asset_path: ./iosevka-ak2-prose-${{ steps.version.outputs.full }}.zip
+        asset_name: iosevka-ak2-prose-${{ steps.version.outputs.full }}.zip
         asset_content_type: application/zip
