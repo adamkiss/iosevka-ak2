@@ -30,7 +30,7 @@ jobs:
         echo "::set-output name=ak::$AK_VERSION"
         echo "::set-output name=iosevka::$IO_VERSION"
         echo "::set-output name=sha::$(git rev-parse HEAD)"
-        echo "::set-output name=full::$AK_VERSION.$IO_VERSION-$IO_SHA"
+        echo "::set-output name=full::$AK_VERSION.$IO_VERSION"
     - name: Copy settings and Install dependencies
       run: |
         cp private-build-plans.toml Iosevka/
@@ -43,7 +43,7 @@ jobs:
       # npm run build -- contents::iosevka-ak2-sans
     - name: ZIP dist files
       run: |
-        zip -r iosevka-ak-${{ steps.version.outputs.full}} ${{ github.workspace }}/Iosevka/dist/iosevka-ak2
+        zip -r iosevka-ak-${{ steps.version.outputs.full }}.zip ${{ github.workspace }}/Iosevka/dist/iosevka-ak2
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
