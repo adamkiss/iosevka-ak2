@@ -47,6 +47,11 @@ jobs:
         mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2-prose/ttf ./iosevka-ak2-prose-${{ steps.version.outputs.full }}
         zip -r iosevka-ak2-${{ steps.version.outputs.full }}.zip iosevka-ak2-${{ steps.version.outputs.full }}
         zip -r iosevka-ak2-prose-${{ steps.version.outputs.full }}.zip iosevka-ak2-prose-${{ steps.version.outputs.full }}
+    - name: Get changes
+      id: changes
+      run: |
+        CHANGELIST=$(git log $(git describe --tags --abbrev=0)..HEAD --oneline --no-decorate | awk '{print "- " $0}')
+        echo "::set-output name=list::$CHANGELIST"
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -57,9 +62,11 @@ jobs:
         release_name: Release ${{ steps.version.outputs.full }}
         body: |
           Iosevka AK2 ${{ steps.version.outputs.full }} and Iosevka AK2 Sans ${{ steps.version.outputs.full }}:
-            - build plan version: **${{ steps.version.outputs.ak }}**
-            - iosevka version: **${{ steps.version.outputs.iosevka }}**
-            - iosevka checkout sha: ** ${{ steps.version.outputs.sha }}**
+          - build plan version: **${{ steps.version.outputs.ak }}**
+          - iosevka version: **${{ steps.version.outputs.iosevka }}**
+          - iosevka checkout sha: ** ${{ steps.version.outputs.sha }}**
+          ---
+          ${{ steps.changes.outputs.list }}
         draft: false
         prerelease: false
     - name: Upload Release Asset
