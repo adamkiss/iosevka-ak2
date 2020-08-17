@@ -1,4 +1,4 @@
-# VERSION 5
+# VERSION 6
 
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
@@ -10,7 +10,7 @@ design = [
     "cv11", # g default
     "VXCB", # h default
     "cv06", # i asymmtetric serif
-    "cv58", # j rounded
+    "VXDE", # j sharp
     "cv68", # k default
     "cv10", # l z shaped
     # "VXDL", # l asymmetric serif
@@ -59,7 +59,7 @@ italic = [
     "cv24", # g curly
     "VXCC", # h curly serif
     "cv04", # i curly asymmetric
-    "VXDE", # j curly asymmetric
+    "cv58", # j curly softer
     "cv08", # l curly asymmetric serif
     "VXBA", # q curly rounded top
     "cv40", # t curly bottom
@@ -95,7 +95,7 @@ design = [
     "cv11", # g default
     "VXCB", # h default
     "cv06", # i asymmtetric serif
-    "cv58", # j rounded
+    "VXDE", # j sharp
     "cv68", # k default
     "cv10", # l z shaped
     # "VXDL", # l asymmetric serif
@@ -144,7 +144,7 @@ italic = [
     "cv24", # g curly
     "VXCC", # h curly serif
     "cv04", # i curly asymmetric
-    "VXDE", # j curly asymmetric
+    "cv58", # j curly softer
     "cv08", # l curly asymmetric serif
     "VXBA", # q curly rounded top
     "cv40", # t curly bottom
