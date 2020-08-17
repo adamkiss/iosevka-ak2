@@ -1,11 +1,11 @@
-# VERSION 4
+# VERSION 5
 
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
 design = [
     "cv01", # a (default)
-    "VXBM", # b rounded bottom
-    "VXBP", # d rounded bottom
+    "VXBK", # b default
+    "VXBN", # d default
     "cv84", # f serifed
     "cv11", # g default
     "VXCB", # h default
@@ -13,11 +13,11 @@ design = [
     "cv58", # j rounded
     "cv68", # k default
     "cv10", # l z shaped
-    # "VXDA", # l asymmetric serif
-    "cv26", # m with shorter middle leg
+    # "VXDL", # l asymmetric serif
+    "cv25", # m default
     "VXCF", # n default
-    "VXCR", # p rounded top,
-    "VXCS", # q rounded top
+    "VXCP", # p default
+    "VXAZ", # q default
     "cv86", # r serif
     "VXDC", # t sharp bottom
     "cv90", # u rounded bottom
@@ -37,7 +37,7 @@ design = [
     "cv46", # 3 sharp
     "VXAV", # 4 like calculator
     "VXAE", # 6 rounded bottom
-    "VXAX", # 7 with cross over
+    "cv65", # 7 serifed
     "cv96", # 9 rounded
     "cv17", # ~ middle
     "cv61", # * middle with 6 legs
@@ -45,7 +45,7 @@ design = [
     "VXAO", # ( ROUNDED
     "cv37", # { middle
     "VXBJ", # # slanted with space
-    "VXAI", # & rounded
+    "VXAH", # & rounded "serifed"
     "cv32", # @ nice
     "cv54", # $ dollar small,
     "cv63", # % default?
@@ -54,13 +54,14 @@ design = [
 # overload…
 italic = [
     "VXBU", # a curly
+    "VXBQ", # d curly
     "cv53", # f curly
     "cv24", # g curly
     "VXCC", # h curly serif
     "cv04", # i curly asymmetric
     "VXDE", # j curly asymmetric
     "cv08", # l curly asymmetric serif
-    "VXCT", # q curly rounded top
+    "VXBA", # q curly rounded top
     "cv40", # t curly bottom
     "VXBT", # u curly
     "cv72", # v curly bottom
@@ -69,7 +70,6 @@ italic = [
     "cv74", # A curly
     "VXBI", # J simplest
     "cv83", # R curly
-    "cv65", # 7 simpler
     "VXBI", # # straight with space
     "VXAL", # & weird
 ]
@@ -88,10 +88,9 @@ css   = "normal"
 family = "Iosevka AK2 Prose"
 quasiProportionalDiversity = 1
 design = [
-    "type", # "Sans"?
     "cv01", # a (default)
-    "VXBM", # b rounded bottom
-    "VXBP", # d rounded bottom
+    "VXBK", # b default
+    "VXBN", # d default
     "cv84", # f serifed
     "cv11", # g default
     "VXCB", # h default
@@ -99,11 +98,11 @@ design = [
     "cv58", # j rounded
     "cv68", # k default
     "cv10", # l z shaped
-    # "VXDA", # l asymmetric serif
-    "cv26", # m with shorter middle leg
+    # "VXDL", # l asymmetric serif
+    "cv25", # m default
     "VXCF", # n default
-    "VXCR", # p rounded top,
-    "VXCS", # q rounded top
+    "VXCP", # p default
+    "VXAZ", # q default
     "cv86", # r serif
     "VXDC", # t sharp bottom
     "cv90", # u rounded bottom
@@ -123,7 +122,7 @@ design = [
     "cv46", # 3 sharp
     "VXAV", # 4 like calculator
     "VXAE", # 6 rounded bottom
-    "VXAX", # 7 with cross over
+    "cv65", # 7 serifed
     "cv96", # 9 rounded
     "cv17", # ~ middle
     "cv61", # * middle with 6 legs
@@ -131,7 +130,7 @@ design = [
     "VXAO", # ( ROUNDED
     "cv37", # { middle
     "VXBJ", # # slanted with space
-    "VXAI", # & rounded
+    "VXAH", # & rounded "serifed"
     "cv32", # @ nice
     "cv54", # $ dollar small,
     "cv63", # % default?
@@ -140,13 +139,14 @@ design = [
 # overload…
 italic = [
     "VXBU", # a curly
+    "VXBQ", # d curly
     "cv53", # f curly
     "cv24", # g curly
     "VXCC", # h curly serif
     "cv04", # i curly asymmetric
     "VXDE", # j curly asymmetric
     "cv08", # l curly asymmetric serif
-    "VXCT", # q curly rounded top
+    "VXBA", # q curly rounded top
     "cv40", # t curly bottom
     "VXBT", # u curly
     "cv72", # v curly bottom
@@ -155,7 +155,6 @@ italic = [
     "cv74", # A curly
     "VXBI", # J simplest
     "cv83", # R curly
-    "cv65", # 7 simpler
     "VXBI", # # straight with space
     "VXAL", # & weird
 ]
