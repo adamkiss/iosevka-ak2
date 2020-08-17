@@ -1,6 +1,8 @@
 # ⌨ Iosevka AK2 and Iosevka AK2 Prose
 
-My own cherry-picked version of the beautiful [Iosevka](https://github.com/be5invis/Iosevka/) font. Thanks Belleve Invis!
+My own version of the beautiful [Iosevka](https://github.com/be5invis/Iosevka/) font. Thanks Belleve Invis!
+
+Iosevka AK2 is the condensed/compressed version with cherry-picked letters. Iosevka AK2 Prose is extended, quasi proportional version of the same selection of letters.
 
 ---
 

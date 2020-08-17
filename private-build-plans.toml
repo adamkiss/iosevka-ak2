@@ -1,4 +1,4 @@
-# VERSION 3
+# VERSION 4
 
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
@@ -79,8 +79,14 @@ upright = "normal"
 italic = "italic"
 # skip oblique
 
+[buildPlans.iosevka-ak2.widths.normal]
+shape = 500
+menu  = 5
+css   = "normal"
+
 [buildPlans.iosevka-ak2-prose]
 family = "Iosevka AK2 Prose"
+quasiProportionalDiversity = 1
 design = [
     "type", # "Sans"?
     "cv01", # a (default)
@@ -158,3 +164,8 @@ italic = [
 upright = "normal"
 italic = "italic"
 # skip oblique
+
+[buildPlans.iosevka-ak2-prose.widths.normal]
+shape = 576
+menu  = 5
+css   = "normal"
