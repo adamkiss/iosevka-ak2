@@ -54,12 +54,12 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.version.outputs.full }}
-        release_name: Release${{ steps.version.outputs.full }}
+        release_name: Release ${{ steps.version.outputs.full }}
         body: |
           Iosevka AK2 ${{ steps.version.outputs.full }} and Iosevka AK2 Sans ${{ steps.version.outputs.full }}:
             - build plan version: **${{ steps.version.outputs.ak }}**
-            - iosevka version: *8${{ steps.version.outputs.iosevka }}**
-            - iosevka checkout **sha: ${{ steps.version.outputs.sha }}**
+            - iosevka version: **${{ steps.version.outputs.iosevka }}**
+            - iosevka checkout sha: ** ${{ steps.version.outputs.sha }}**
         draft: false
         prerelease: false
     - name: Upload Release Asset
