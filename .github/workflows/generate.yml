@@ -39,12 +39,12 @@ jobs:
     - name: Run build
       run: |
         cd Iosevka
-        npm run build -- contents::iosevka-ak2
-        npm run build -- contents::iosevka-ak2-prose
+        npm run build -- ttf::iosevka-ak2
+        npm run build -- ttf::iosevka-ak2-prose
     - name: ZIP dist files
       run: |
-        mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2 ./iosevka-ak2-${{ steps.version.outputs.full }}
-        mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2-prose ./iosevka-ak2-prose-${{ steps.version.outputs.full }}
+        mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2/ttf ./iosevka-ak2-${{ steps.version.outputs.full }}
+        mv ${{ github.workspace }}/Iosevka/dist/iosevka-ak2-prose/ttf ./iosevka-ak2-prose-${{ steps.version.outputs.full }}
         zip -r iosevka-ak2-${{ steps.version.outputs.full }}.zip iosevka-ak2-${{ steps.version.outputs.full }}
         zip -r iosevka-ak2-prose-${{ steps.version.outputs.full }}.zip iosevka-ak2-prose-${{ steps.version.outputs.full }}
     - name: Create Release
