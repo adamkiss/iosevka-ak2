@@ -16,9 +16,19 @@ jobs:
         brew tap caryll/tap
         brew install otfcc-mac64
         pip3 install afdko
-    - name: Clone latest Iosevka
+    - name: Clone latest Iosevka-latest
+      id: clone
       run: |
         git clone https://github.com/be5invis/Iosevka.git --depth 1
+    - name: Get version strings
+      id: version
+      run: |
+        AK_VERSION=1
+        cd Iosevka
+        IO_VERSION=`cat package.json | jq -r '(.version)'`
+        IO_SHA=`git rev-parse HEAD | head -c 6`
+        IO_FULL="$AK_VERSION.$IO_VERSION-$IO_SHA"
+        echo "::set-output name=version::$IO_FULL"
     - name: Copy settings and Install dependencies
       run: |
         cp private-build-plans.toml Iosevka/
@@ -29,14 +39,27 @@ jobs:
         cd Iosevka
         npm run build -- ttf::iosevka-ak2
       # npm run build -- contents::iosevka-ak2-sans
-    - name: Figure out where shit is
+    - name: ZIP dist files
       run: |
-        ls
-        ls *
-        ls */*
-    - name: Add fonts as artifact
-      uses: actions/upload-artifact@v2
+        zip -r iosevka-ak-${{ steps.version.output.version}} ${{ github.workspace }}/Iosevka/dist/iosevka-ak2
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: Iosevka AK2
-        path: ${{ github.workspace }}/Iosevka/dist/iosevka-ak2
-
+        tag_name: ${{ steps.version.outputs.version }}
+        release_name: Release ${{ steps.version.outputs.version }}
+        body: Latest build, ${{ steps.version.outputs.version }}
+        draft: false
+        prerelease: false
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./iosevka-ak-${{ steps.version.outputs.version }}.zip
+        asset_name: iosevka-ak-${{ steps.version.outputs.version }}.zip
+        asset_content_type: application/zip
