@@ -23,12 +23,11 @@ jobs:
     - name: Get version strings
       id: version
       run: |
-        AK_VERSION=1
+        AK_VERSION=$(head -n 1 private-build-plans.toml | cut -f 3 -d ' ')
         cd Iosevka
-        IO_VERSION=`cat package.json | jq -r '(.version)'`
-        IO_SHA=`git rev-parse HEAD | head -c 6`
-        IO_FULL="$AK_VERSION.$IO_VERSION-$IO_SHA"
-        echo "::set-output name=version::$IO_FULL"
+        IO_VERSION=$(cat package.json | jq -r '(.version)')
+        IO_SHA=$(git rev-parse HEAD | head -c 6)
+        echo "::set-output name=version::$AK_VERSION.$IO_VERSION-$IO_SHA"
     - name: Copy settings and Install dependencies
       run: |
         cp private-build-plans.toml Iosevka/
