@@ -1,170 +1,215 @@
-# VERSION 6
+# VERSION 11
 
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
-design = [
-    "cv01", # a (default)
-    "VXBK", # b default
-    "VXBN", # d default
-    "cv84", # f serifed
-    "cv11", # g default
-    "VXCB", # h default
-    "cv06", # i asymmtetric serif
-    "VXDE", # j sharp
-    "cv68", # k default
-    "cv10", # l z shaped
-    # "VXDL", # l asymmetric serif
-    "cv25", # m default
-    "VXCF", # n default
-    "VXCP", # p default
-    "VXAZ", # q default
-    "cv86", # r serif
-    "VXDC", # t sharp bottom
-    "cv90", # u rounded bottom
-    "VXBF", # y with a tail
-    "VXBD", # z default
-    "cv73", # A default,
-    "VXAQ", # B rounded
-    "VXBG", # D default
-    "cv92", # G rounded bottom
-    "v-capital-j-serifed-both-sides", # J serif asymmetric?
-    "VXCI", # M default
-    "VXCA", # Q rounded bottom
-    "cv82", # R default
-    "cv80", # Y straight
-    "cv13", # 0 slash
-    "cv51", # 1 serif
-    "cv46", # 3 sharp
-    "VXAV", # 4 like calculator
-    "VXAE", # 6 rounded bottom
-    "cv65", # 7 serifed
-    "cv96", # 9 rounded
-    "cv17", # ~ middle
-    "cv61", # * middle with 6 legs
-    "cv30", # ^ middle
-    "VXAO", # ( ROUNDED
-    "cv37", # { middle
-    "VXBJ", # # slanted with space
-    "VXAH", # & rounded "serifed"
-    "cv32", # @ nice
-    "cv54", # $ dollar small,
-    "cv63", # % default?
-    "cv67", # <= ligature"
-]
-# overload…
-italic = [
-    "VXBU", # a curly
-    "VXBQ", # d curly
-    "cv53", # f curly
-    "cv24", # g curly
-    "VXCC", # h curly serif
-    "cv04", # i curly asymmetric
-    "cv58", # j curly softer
-    "cv08", # l curly asymmetric serif
-    "VXBA", # q curly rounded top
-    "cv40", # t curly bottom
-    "VXBT", # u curly
-    "cv72", # v curly bottom
-    "cv78", # x curly bottom
-    "cv79", # y curly
-    "cv74", # A curly
-    "VXBI", # J simplest
-    "cv83", # R curly
-    "VXBI", # # straight with space
-    "VXAL", # & weird
-]
+spacing = "normal"
+serifs = "sans"
+no-cv-ss = false
 
-[buildPlans.iosevka-ak2.slopes]
-upright = "normal"
-italic = "italic"
-# skip oblique
+[buildPlans.iosevka-ak2.variants.design]
+capital-d = "standard-serifless"
+capital-e = "serifless"
+capital-f = "serifless"
+capital-g = "toothed-serifless-hooked"
+capital-h = "serifless"
+capital-i = "serifed"
+capital-j = "serifed"
+capital-k = "curly-serifless"
+capital-l = "serifless"
+capital-m = "hanging"
+capital-n = "asymmetric"
+capital-p = "closed"
+capital-q = "detached-bend-tailed"
+capital-r = "standing"
+capital-s = "unilateral-inward-serifed"
+capital-v = "curly"
+capital-w = "curly"
+capital-x = "curly-serifless"
+capital-y = "curly-serifless"
+capital-z = "curly-serifless"
+b = "toothed"
+f = "flat-hook"
+g = "double-storey"
+i = "serifed-asymmetric"
+j = "serifless"
+k = "curly-serifless"
+l = "serifed-asymmetric"
+m = "short-leg"
+n = "straight"
+q = "straight-motion-serifed"
+r = "hookless-base-serifed"
+s = "unilateral-inward-serifed"
+t = "standard-short-neck"
+v = "curly"
+w = "curly"
+x = "curly-serifless"
+y = "cursive"
+z = "curly-serifed"
+turn-v = "curly"
+lower-lambda = "curly-turn"
+lower-mu = "tailless"
+zero = "dotted"
+one = "base"
+two = "straight-neck"
+three = "flat-top"
+four = "open"
+five = "vertical-upper-left-bar"
+six = "closed-contour"
+seven = "curly-serifless"
+eight = "two-circles"
+nine = "closed-contour"
+asterisk = "flip-penta-low"
+paragraph-sign = "low"
+caret = "medium"
+paren = "flat-arc"
+brace = "curly-flat-boundary"
+number-sign = "upright-open"
+ampersand = "et-toothed"
+at = "short"
+dollar = "open-cap"
+cent = "bar-interrupted"
+percent = "rings-segmented-slash"
+bar = "force-upright"
+lig-ltgteq = "slanted"
+ascii-single-quote = "raised-comma"
+ascii-grave = "straight"
+question = "corner"
+punctuation-dot = "round"
+
+[buildPlans.iosevka-ak2.variants.italic]
+a = "double-storey-serifed"
+f = "flat-hook-tailed"
+g = "double-storey-open"
+i = "tailed-serifed"
+j = "serifed"
+k = "diagonal-tailed-cursive-serifless"
+l = "tailed-serifed"
+y = "cursive-flat-hook"
+z = "curly-serifed-with-horizontal-crossbar"
+zero = "long-dotted"
+ampersand = "flat-top"
+dollar = "interrupted"
 
 [buildPlans.iosevka-ak2.widths.normal]
-shape = 500
-menu  = 5
-css   = "normal"
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.iosevka-ak2.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-ak2.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 [buildPlans.iosevka-ak2-prose]
 family = "Iosevka AK2 Prose"
-quasiProportionalDiversity = 1
-design = [
-    "cv01", # a (default)
-    "VXBK", # b default
-    "VXBN", # d default
-    "cv84", # f serifed
-    "cv11", # g default
-    "VXCB", # h default
-    "cv06", # i asymmtetric serif
-    "VXDE", # j sharp
-    "cv68", # k default
-    "cv10", # l z shaped
-    # "VXDL", # l asymmetric serif
-    "cv25", # m default
-    "VXCF", # n default
-    "VXCP", # p default
-    "VXAZ", # q default
-    "cv86", # r serif
-    "VXDC", # t sharp bottom
-    "cv90", # u rounded bottom
-    "VXBF", # y with a tail
-    "VXBD", # z default
-    "cv73", # A default,
-    "VXAQ", # B rounded
-    "VXBG", # D default
-    "cv92", # G rounded bottom
-    "v-capital-j-serifed-both-sides", # J serif asymmetric?
-    "VXCI", # M default
-    "VXCA", # Q rounded bottom
-    "cv82", # R default
-    "cv80", # Y straight
-    "cv13", # 0 slash
-    "cv51", # 1 serif
-    "cv46", # 3 sharp
-    "VXAV", # 4 like calculator
-    "VXAE", # 6 rounded bottom
-    "cv65", # 7 serifed
-    "cv96", # 9 rounded
-    "cv17", # ~ middle
-    "cv61", # * middle with 6 legs
-    "cv30", # ^ middle
-    "VXAO", # ( ROUNDED
-    "cv37", # { middle
-    "VXBJ", # # slanted with space
-    "VXAH", # & rounded "serifed"
-    "cv32", # @ nice
-    "cv54", # $ dollar small,
-    "cv63", # % default?
-    "cv67", # <= ligature"
-]
-# overload…
-italic = [
-    "VXBU", # a curly
-    "VXBQ", # d curly
-    "cv53", # f curly
-    "cv24", # g curly
-    "VXCC", # h curly serif
-    "cv04", # i curly asymmetric
-    "cv58", # j curly softer
-    "cv08", # l curly asymmetric serif
-    "VXBA", # q curly rounded top
-    "cv40", # t curly bottom
-    "VXBT", # u curly
-    "cv72", # v curly bottom
-    "cv78", # x curly bottom
-    "cv79", # y curly
-    "cv74", # A curly
-    "VXBI", # J simplest
-    "cv83", # R curly
-    "VXBI", # # straight with space
-    "VXAL", # & weird
-]
+spacing = "quasi-proportional-extension-only"
+serifs = "sans"
+no-cv-ss = false
 
-[buildPlans.iosevka-ak2-prose.slopes]
-upright = "normal"
-italic = "italic"
-# skip oblique
+[buildPlans.iosevka-ak2-prose.variants.design]
+capital-d = "standard-serifless"
+capital-e = "serifless"
+capital-f = "serifless"
+capital-g = "toothed-serifless-hooked"
+capital-h = "serifless"
+capital-i = "serifed"
+capital-j = "serifed"
+capital-k = "curly-serifless"
+capital-l = "serifless"
+capital-m = "hanging"
+capital-n = "asymmetric"
+capital-p = "closed"
+capital-q = "detached-bend-tailed"
+capital-r = "standing"
+capital-s = "unilateral-inward-serifed"
+capital-v = "curly"
+capital-w = "curly"
+capital-x = "curly-serifless"
+capital-y = "curly-serifless"
+capital-z = "curly-serifless"
+b = "toothed"
+f = "flat-hook"
+g = "double-storey"
+i = "serifed-asymmetric"
+j = "serifless"
+k = "curly-serifless"
+l = "serifed-asymmetric"
+m = "short-leg"
+n = "straight"
+q = "straight-motion-serifed"
+r = "hookless-base-serifed"
+s = "unilateral-inward-serifed"
+t = "standard-short-neck"
+v = "curly"
+w = "curly"
+x = "curly-serifless"
+y = "cursive"
+z = "curly-serifed"
+turn-v = "curly"
+lower-lambda = "curly-turn"
+lower-mu = "tailless"
+zero = "dotted"
+one = "base"
+two = "straight-neck"
+three = "flat-top"
+four = "open"
+five = "vertical-upper-left-bar"
+six = "closed-contour"
+seven = "curly-serifless"
+eight = "two-circles"
+nine = "closed-contour"
+asterisk = "flip-penta-low"
+paragraph-sign = "low"
+caret = "medium"
+paren = "flat-arc"
+brace = "curly-flat-boundary"
+number-sign = "upright-open"
+ampersand = "et-toothed"
+at = "short"
+dollar = "open-cap"
+cent = "bar-interrupted"
+percent = "rings-segmented-slash"
+bar = "force-upright"
+lig-ltgteq = "slanted"
+ascii-single-quote = "raised-comma"
+ascii-grave = "straight"
+question = "corner"
+punctuation-dot = "round"
+
+[buildPlans.iosevka-ak2-prose.variants.italic]
+a = "double-storey-serifed"
+f = "flat-hook-tailed"
+g = "double-storey-open"
+i = "tailed-serifed"
+j = "serifed"
+k = "diagonal-tailed-cursive-serifless"
+l = "tailed-serifed"
+y = "cursive-flat-hook"
+z = "curly-serifed-with-horizontal-crossbar"
+zero = "long-dotted"
+ampersand = "flat-top"
+dollar = "interrupted"
 
 [buildPlans.iosevka-ak2-prose.widths.normal]
-shape = 576
-menu  = 5
-css   = "normal"
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.iosevka-ak2-prose.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-ak2-prose.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
