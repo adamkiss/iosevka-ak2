@@ -1,4 +1,4 @@
-# VERSION 8
+# VERSION 9
 
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
@@ -21,7 +21,7 @@ capital-n = "asymmetric"
 capital-p = "closed"
 capital-q = "detached-bend-tailed"
 capital-r = "standing"
-capital-s = "unilateral-inward-serifed"
+capital-s = "serifless"
 capital-v = "curly"
 capital-w = "curly"
 capital-x = "curly-serifless"
@@ -34,11 +34,10 @@ i = "serifed-asymmetric"
 j = "serifless"
 k = "curly-serifless"
 l = "serifed-asymmetric"
-m = "short-leg"
 n = "straight"
 q = "straight-motion-serifed"
-r = "hookless-base-serifed"
-s = "unilateral-inward-serifed"
+r = "top-serifed"
+s = "serifless"
 t = "standard-short-neck"
 v = "curly"
 w = "curly"
@@ -71,7 +70,7 @@ cent = "bar-interrupted"
 percent = "rings-segmented-slash"
 bar = "force-upright"
 lig-ltgteq = "slanted"
-ascii-single-quote = "raised-comma"
+ascii-single-quote = "straight"
 ascii-grave = "straight"
 question = "corner"
 punctuation-dot = "round"
@@ -89,11 +88,6 @@ z = "curly-serifed-with-horizontal-crossbar"
 zero = "long-dotted"
 ampersand = "flat-top"
 dollar = "interrupted"
-
-[buildPlans.iosevka-ak2.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
 
 [buildPlans.iosevka-ak2.slopes.upright]
 angle = 0
@@ -128,7 +122,7 @@ capital-n = "asymmetric"
 capital-p = "closed"
 capital-q = "detached-bend-tailed"
 capital-r = "standing"
-capital-s = "unilateral-inward-serifed"
+capital-s = "serifless"
 capital-v = "curly"
 capital-w = "curly"
 capital-x = "curly-serifless"
@@ -141,11 +135,10 @@ i = "serifed-asymmetric"
 j = "serifless"
 k = "curly-serifless"
 l = "serifed-asymmetric"
-m = "short-leg"
 n = "straight"
 q = "straight-motion-serifed"
-r = "hookless-base-serifed"
-s = "unilateral-inward-serifed"
+r = "top-serifed"
+s = "serifless"
 t = "standard-short-neck"
 v = "curly"
 w = "curly"
@@ -178,7 +171,7 @@ cent = "bar-interrupted"
 percent = "rings-segmented-slash"
 bar = "force-upright"
 lig-ltgteq = "slanted"
-ascii-single-quote = "raised-comma"
+ascii-single-quote = "straight"
 ascii-grave = "straight"
 question = "corner"
 punctuation-dot = "round"
@@ -196,11 +189,6 @@ z = "curly-serifed-with-horizontal-crossbar"
 zero = "long-dotted"
 ampersand = "flat-top"
 dollar = "interrupted"
-
-[buildPlans.iosevka-ak2-prose.widths.normal]
-shape = 600
-menu = 5
-css = "normal"
 
 [buildPlans.iosevka-ak2-prose.slopes.upright]
 angle = 0
