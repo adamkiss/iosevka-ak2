@@ -1,10 +1,10 @@
-# VERSION 11
+# VERSION 8
 
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
 spacing = "normal"
 serifs = "sans"
-no-cv-ss = false
+no-cv-ss = true
 
 [buildPlans.iosevka-ak2.variants.design]
 capital-d = "standard-serifless"
@@ -111,7 +111,7 @@ css = "italic"
 family = "Iosevka AK2 Prose"
 spacing = "quasi-proportional-extension-only"
 serifs = "sans"
-no-cv-ss = false
+no-cv-ss = true
 
 [buildPlans.iosevka-ak2-prose.variants.design]
 capital-d = "standard-serifless"
