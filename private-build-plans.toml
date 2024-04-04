@@ -52,7 +52,6 @@ x = "curly-serifless"
 y = "cursive-serifless"
 z = "curly-serifed"
 
-turn-v = "curly"
 lower-lambda = "curly-turn"
 lower-mu = "tailed-serifless"
 
@@ -170,7 +169,6 @@ x = "curly-serifless"
 y = "cursive-serifless"
 z = "curly-serifed"
 
-turn-v = "curly"
 lower-lambda = "curly-turn"
 lower-mu = "tailed-serifless"
 
