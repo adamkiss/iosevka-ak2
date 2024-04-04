@@ -1,4 +1,4 @@
-# VERSION 12
+# VERSION 13
 
 [buildPlans.iosevka-ak2]
 family = "Iosevka AK2"
@@ -118,14 +118,14 @@ css = "italic"
 
 [buildPlans.iosevka-ak2-prose]
 family = "Iosevka AK2 Prose"
-spacing = "quasi-proportional"
+spacing = "quasi-proportional-extension-only"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 
 [buildPlans.iosevka-ak2-prose.widths.Normal]
-shape = 600
-menu = 7
+shape = 548
+menu = 5
 css = "normal"
 
 
