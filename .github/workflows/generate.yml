@@ -15,7 +15,7 @@ jobs:
         brew install ttfautohint
         brew tap caryll/tap
         brew install otfcc-mac64
-        pip3 install afdko
+        pip3 install afdko --break-system-packages
     - name: Clone latest Iosevka-latest
       id: clone
       run: |
