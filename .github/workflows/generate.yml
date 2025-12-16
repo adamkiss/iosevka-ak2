@@ -4,6 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   generate:
+    if: "!contains(github.event.head_commit.message, 'nobuild')"
     timeout-minutes: 120
     runs-on: macos-latest
     steps:
