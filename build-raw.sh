@@ -17,9 +17,9 @@ npm install
 npm run build -- ttf::iosevka-ak2
 npm run build -- ttf::iosevka-ak2-prose
 
-zip -r "iosevka-ak2-$FULLID.zip" dist/iosevka-ak2/TTF
-zip -r "iosevka-ak2-$FULLID-unhinted.zip" dist/iosevka-ak2/TTF-Unhinted
-zip -r "iosevka-ak2-prose-$FULLID.zip" dist/iosevka-ak2-prose/TTF
-zip -r "iosevka-ak2-prose-$FULLID-unhinted.zip" dist/iosevka-ak2-prose/TTF-Unhinted
+zip -jr "iosevka-ak2-$FULLID.zip" dist/iosevka-ak2/TTF
+zip -jr "iosevka-ak2-$FULLID-unhinted.zip" dist/iosevka-ak2/TTF-Unhinted
+zip -jr "iosevka-ak2-prose-$FULLID.zip" dist/iosevka-ak2-prose/TTF
+zip -jr "iosevka-ak2-prose-$FULLID-unhinted.zip" dist/iosevka-ak2-prose/TTF-Unhinted
 
 echo "DONE"
